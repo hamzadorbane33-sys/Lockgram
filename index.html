@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,20 +22,21 @@
       flex-direction:column;
       align-items:center;
       justify-content:center;
-      gap:2px; /* smaller gap between logo and text */
       margin-bottom:20px;
+      position:relative;
     }
 
     /* FIXED LOGO SIZE */
     .logo-container img{
       height:400px; /* logo height */
       width:auto;
+      display:block;
     }
 
     .logo-container h1{
       font-size:100px; /* text height */
       line-height:1;
-      margin:0;
+      margin-top:-80px; /* pull text up closer to logo */
     }
 
     p.sub{font-size:1.1rem;color:var(--sub);max-width:600px;margin:0 auto 30px;}
@@ -78,6 +80,7 @@
       }
       .logo-container h1{
         font-size:50px; /* shrink text on mobile */
+        margin-top:-40px; /* pull up proportionally */
       }
     }
   </style>
