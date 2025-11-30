@@ -46,14 +46,14 @@
       height:230px;
       width:auto;
       display:block;
-      margin-bottom:-70px; /* closer spacing */
+      margin-bottom:-70px;
     }
 
     .logo-container h1{
       font-size:72px;
       font-weight:800;
       letter-spacing:-1px;
-      line-height:0.75; /* tighter text */
+      line-height:0.75;
       margin-top:0;
       padding-top:0;
     }
@@ -104,7 +104,7 @@
       padding:30px;
       border-radius:12px;
       text-align:center;
-      opacity:0; /* initial state for animation */
+      opacity:0;
       transform: translateY(30px);
       transition: all 0.8s ease-out;
     }
@@ -112,7 +112,7 @@
     .card.visible{
       opacity:1;
       transform: translateY(0);
-      box-shadow: 0 10px 20px rgba(0,255,136,0.4); /* glow on scroll */
+      box-shadow: 0 10px 20px rgba(0,255,136,0.4);
       transition: all 0.8s ease-out;
     }
 
@@ -246,10 +246,10 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-links">
-      <a href="/contact">Contact</a> |
-      <a href="/privacy">Privacy Policy</a> |
-      <a href="/about">About Us</a> |
-      <a href="/terms">Terms of Service</a>
+      <a href="contact.html" target="_blank">Contact</a> |
+      <a href="privacy.html" target="_blank">Privacy Policy</a> |
+      <a href="about.html" target="_blank">About Us</a> |
+      <a href="terms.html" target="_blank">Terms of Service</a>
     </div>
     <p>LockGram © 2025 – Built with ❤️ and zero tracking.</p>
   </footer>
@@ -257,16 +257,14 @@
   <script>
     // ANIMATE ON SCROLL
     const cards = document.querySelectorAll('.card');
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting){
-          entry.target.classList.add('visible'); // adds glow + fade
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });
-
     cards.forEach(card => observer.observe(card));
   </script>
 
