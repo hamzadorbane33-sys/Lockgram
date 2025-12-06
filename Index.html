@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LockGram – Privacy Social That Pays You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root{
+      --bg:#0a0a0a;
+      --card:#111;
+      --accent:#00ff88;   /* LockGram green */
+      --text:#fff;
+      --sub:#aaa;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;}
+    body{background:var(--bg);color:var(--text);line-height:1.6;}
+
+    /* HEADER */
+    header{padding:80px 20px 60px;text-align:center;background:linear-gradient(135deg,var(--accent) 0%,#0f0f0f 100%);}
+    .logo-container{display:flex;flex-direction:column;align-items:center;line-height:0;}
+    .logo-container img{height:230px;width:auto;display:block;margin-bottom:-70px;}
+    .logo-container h1{font-size:72px;font-weight:800;letter-spacing:-1px;line-height:0.75;margin-top:0;padding-top:0;}
+    p.sub{font-size:1.15rem;color:var(--sub);max-width:600px;margin:20px auto 30px;}
+    .btn{display:inline-block;background:var(--accent);color:#000;padding:14px 28px;border-radius:30px;font-weight:700;text-decoration:none;transition:.3s;}
+    .btn:hover{transform:scale(1.05);}
+
+    /* SECTIONS */
+    section{padding:60px 20px;max-width:1000px;margin:auto;}
+    h2{text-align:center;margin-bottom:30px;font-size:2rem;}
+    .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));}
+    .card{background:var(--card);padding:30px;border-radius:12px;text-align:center;opacity:0;transform:translateY(30px);transition:all 0.8s ease-out;}
+    .card.visible{opacity:1;transform:translateY(0);box-shadow:0 10px 20px rgba(0,255,136,0.4);}
+    .card h3{margin-bottom:10px;color:var(--accent);}
+    .cta-strip{background:var(--card);padding:40px 20px;text-align:center;border-radius:12px;margin:40px auto;max-width:900px;}
+
+    /* FOOTER */
+    footer{text-align:center;padding:40px 20px;font-size:.9rem;color:var(--sub);}
+    .footer-links{margin-bottom:10px;}
+    .footer-links a{color:var(--accent);margin:0 10px;text-decoration:none;transition:.3s;}
+    .footer-links a:hover{color:#fff;}
+
+    /* MOBILE */
+    @media (max-width:600px){
+      .logo-container img{height:150px;margin-bottom:-40px;}
+      .logo-container h1{font-size:42px;}
+      p.sub{font-size:1rem;}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo-container">
+      <img src="https://i.imgur.com/LQuakpq.png" alt="LockGram Logo">
+      <h1>Lockgram</h1>
+    </div>
+    <p class="sub">The Next-Gen Social — Private, Smart, Connected</p>
+    <a class="btn" href="https://t.me/Lockgramapp_bot/Lockgrammini">Launch Mini-App</a>
+  </header>
+
+  <!-- WHAT IS LOCKGRAM -->
+  <section>
+    <h2>What is LockGram?</h2>
+    <p style="text-align:center; color:var(--sub); max-width:650px; margin:0 auto;">
+      LockGram is a secure, privacy-first social app where your chats stay private,
+      your data is yours, and every interaction earns you crypto rewards.
+      Chat. Share. Earn. LockGram lets you connect safely while turning your
+      social activity into crypto.
+    </p>
+
+    <!-- VIDEO -->
+    <div style="margin-top:40px; text-align:center;">
+      <video controls autoplay muted playsinline style="width:100%; max-width:900px; border-radius:20px; display:block; margin:auto;">
+        <source src="https://raw.githubusercontent.com/hamzadorbane33-sys/Lockgram/main/1764456780016.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <!-- WHY LOCKGRAM -->
+  <section>
+    <h2>Why LockGram?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🔒 Privacy</h3>
+        <p>End-to-end encryption for chats and stories. Zero tracking. Your data remains secure.</p>
+      </div>
+      <div class="card">
+        <h3>💰 Web3</h3>
+        <p>Earn crypto rewards, connect wallets, and enjoy blockchain-powered social tools.</p>
+      </div>
+      <div class="card">
+        <h3>🤖 AI Agents</h3>
+        <p>AI assistants help you with replies, safety, and content creation.</p>
+      </div>
+      <div class="card">
+        <h3>🌐 Network</h3>
+        <p>Invite users, create content, and grow — earn LockCoins for every interaction.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip">
+    <h2>Trusted by Thousands of Users</h2>
+    <p style="color:var(--sub); margin:20px 0;">
+      Join 500k+ people connecting privately and earning daily.
+    </p>
+    <a class="btn" href="https://t.me/Lockgramapp_bot/Lockgrammini">Launch Mini-App</a>
+  </section>
+
+  <!-- EARN & GROW -->
+  <section>
+    <h2>Grow & Earn</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>💰 Earn LockCoins</h3>
+        <p>Invite Friends<br>Grow your network and earn crypto rewards for every invite.</p>
+      </div>
+      <div class="card">
+        <h3>📈 Create Content</h3>
+        <p>Posts and stories generate LockCoins automatically.</p>
+      </div>
+      <div class="card">
+        <h3>🔄 Swap Tokens</h3>
+        <p>Convert your LockCoins to LOCK token seamlessly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="contact.html" target="_blank">Contact</a> |
+      <a href="privacy.html" target="_blank">Privacy Policy</a> |
+      <a href="about.html" target="_blank">About Us</a> |
+      <a href="terms.html" target="_blank">Terms of Service</a>
+    </div>
+    <p>LockGram © 2025 – Built with ❤️ and zero tracking.</p>
+  </footer>
+
+  <script>
+    // ANIMATE ON SCROLL
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(card => observer.observe(card));
+  </script>
+</body>
+</html>
